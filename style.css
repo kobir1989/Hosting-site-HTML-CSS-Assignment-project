@@ -4,8 +4,10 @@
   box-sizing: border-box;
 }
 :root {
-  --light-blue: #0096ff;
-  --dark-blue: #5800ff;
+  --light-blue: #45affa;
+  --dark-blue: #3366f3;
+  --gray: #808080;
+  --white: #ffffff;
 }
 body {
   font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
@@ -14,14 +16,13 @@ body {
 }
 .header {
   width: 100%;
-  height: 100vh;
 }
 .flex {
   display: flex;
   flex-direction: row;
 }
 .heaer__nav {
-  width: 80%;
+  width: 60%;
   margin: auto;
   padding-top: 2%;
 }
@@ -54,4 +55,263 @@ li:hover {
   border: 1px solid var(--light-blue);
   background-color: transparent;
   border-radius: 8px;
+}
+.header__main {
+  width: 60%;
+  margin: auto;
+}
+
+.header__text,
+.header__img {
+  width: 50%;
+  padding: 5%;
+}
+.header__text h2 {
+  font-size: 2rem;
+  padding-bottom: 2%;
+}
+
+.header__text p {
+  color: var(--gray);
+  font-size: 1rem;
+  padding-bottom: 4%;
+}
+.btn {
+  background-image: linear-gradient(
+    to top left,
+    var(--dark-blue),
+    var(--light-blue)
+  );
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: var(--white);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7);
+}
+.header__img img {
+  width: 40rem;
+  height: 25rem;
+}
+.services {
+  width: 100%;
+}
+.service__container {
+  margin: auto;
+  width: 60%;
+}
+.services__intro {
+  padding: 5%;
+  margin: auto;
+}
+.services__intro-text,
+.services__intro-text-sm {
+  width: 50%;
+}
+.services__intro-text h3 {
+  font-size: 2rem;
+}
+.services__intro-text-sm p {
+  font-size: 1.5rem;
+  color: var(--gray);
+}
+.services__intro-card,
+.services__intro-card-row-1,
+.services__intro-card-row-2 {
+  margin-top: 5%;
+}
+.card {
+  padding: 5%;
+}
+.icon {
+  font-size: 4rem;
+  color: var(--light-blue);
+}
+.card h4 {
+  font-size: 1.5rem;
+}
+.card p {
+  color: var(--gray);
+  font-size: 1rem;
+}
+.pricing {
+  background-image: linear-gradient(
+    to top left,
+    var(--dark-blue),
+    var(--light-blue)
+  );
+}
+.pricing__container-main {
+  width: 60%;
+  margin: auto;
+}
+.pricing__container {
+  align-items: center;
+  justify-content: space-evenly;
+}
+.pricing__Heading {
+  text-align: center;
+  padding: 2% 0;
+  color: var(--white);
+  font-size: 2rem;
+}
+.pricing__card {
+  background-color: var(--white);
+  padding: 3%;
+  margin-bottom: 4%;
+  border-radius: 8px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+  width: 12rem;
+}
+.card__text h4 {
+  font-size: 1.3rem;
+}
+.card__text p {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+.card__text-sm {
+  padding: 2% 0;
+}
+.card__text-sm h5 {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--gray);
+}
+.price {
+  text-align: center;
+  padding-top: 4%;
+}
+.price h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.price span {
+  color: var(--gray);
+}
+.price p {
+  color: var(--gray);
+  font-size: 0.8rem;
+  padding-bottom: 4%;
+}
+.review__card-box {
+  width: 60%;
+  margin: auto;
+}
+.review__heading {
+  text-align: center;
+  padding-top: 7%;
+}
+.review__heading h3 {
+  font-size: 2rem;
+}
+.review__heading p {
+  font-size: 0.9rem;
+  color: var(--gray);
+  padding-bottom: 3%;
+}
+.review__card-row-1,
+.review__card-row-2 {
+  justify-content: space-between;
+}
+.review__card {
+  padding: 3%;
+  margin: 2%;
+  border: 0.2px solid rgb(231, 231, 231);
+  border-radius: 8px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  width: 45%;
+}
+.round__img {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--gray);
+  border-radius: 100%;
+  margin: auto 10% auto 0;
+}
+.review__card p {
+  font-size: 0.9rem;
+  padding-bottom: 2%;
+  color: var(--gray);
+}
+.review__customar h4 {
+  font-size: 1rem;
+}
+.banner__bottom {
+  position: relative;
+  width: 100;
+  height: 20vh;
+  margin-top: 8%;
+  background-image: linear-gradient(
+    to top left,
+    var(--dark-blue),
+    var(--light-blue)
+  );
+}
+.banner__container {
+  width: 60%;
+  margin: auto;
+  z-index: 2;
+}
+.banner__text,
+.banner__btn {
+  width: 50%;
+}
+.banner__btn {
+  margin: auto;
+  text-align: right;
+}
+
+.banner__text h3 {
+  font-size: 2rem;
+  color: var(--white);
+}
+.banner__text p {
+  font-size: 0.8rem;
+  color: var(--white);
+}
+.background {
+  width: 10rem;
+  height: 10rem;
+  background-color: #ffffff2f;
+}
+.design-1 {
+  position: absolute;
+  right: 5%;
+  transform: rotate(35deg);
+}
+.design-2 {
+  position: absolute;
+  right: 35%;
+  top: 35%;
+  transform: rotate(50deg);
+}
+.design-3 {
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  transform: rotate(15deg);
+}
+footer {
+  margin-top: 8%;
+}
+.footer__container {
+  width: 60%;
+  margin: auto;
+  justify-content: space-between;
+  padding: 3%;
+}
+.footer__logo-div h4 {
+  font-size: 1rem;
+}
+.footer__logo-div p {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+.footer__manue h5 {
+  font-size: 1rem;
+}
+.footer__manue p {
+  font-size: 0.8rem;
+  color: var(--gray);
 }
