@@ -47,15 +47,7 @@ li:hover {
   font-weight: 700;
   cursor: pointer;
 }
-.nav__btn button {
-  padding: 1rem;
-  color: var(--light-blue);
-  font-size: 1rem;
-  font-weight: 700;
-  border: 1px solid var(--light-blue);
-  background-color: transparent;
-  border-radius: 8px;
-}
+
 .header__main {
   width: 60%;
   margin: auto;
@@ -77,17 +69,22 @@ li:hover {
   padding-bottom: 4%;
 }
 .btn {
+  border: 0.5px solid var(--light-blue);
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+.btn:hover {
   background-image: linear-gradient(
     to top left,
     var(--dark-blue),
     var(--light-blue)
   );
-  border: none;
-  padding: 1rem;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  color: var(--white);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7);
+  color: var(--white);
 }
 .header__img img {
   width: 40rem;
@@ -163,6 +160,11 @@ li:hover {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
   width: 12rem;
 }
+
+.pricing__card:hover {
+  background-color: #000000;
+  color: var(--white);
+}
 .card__text h4 {
   font-size: 1.3rem;
 }
@@ -172,6 +174,10 @@ li:hover {
 }
 .card__text-sm {
   padding: 2% 0;
+}
+.fa-circle-check {
+  padding: 0 5%;
+  color: rgb(112, 196, 112);
 }
 .card__text-sm h5 {
   font-size: 0.9rem;
@@ -261,6 +267,15 @@ li:hover {
   margin: auto;
   text-align: right;
 }
+.btn-transparent {
+  padding: 1rem;
+  border: 0.5px solid var(--white);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: transparent;
+  font-weight: 700;
+}
 
 .banner__text h3 {
   font-size: 2rem;
@@ -298,20 +313,30 @@ footer {
 .footer__container {
   width: 60%;
   margin: auto;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.font h4 {
+  font-size: 1rem;
+}
+.font p {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+.font p:hover {
+  cursor: pointer;
+  color: var(--dark-blue);
+}
+.footer__social-icon i {
+  font-size: 1.2rem;
+  color: var(--light-blue);
+  margin: 0 4%;
+}
+.footer__logo,
+.footer__social-icon,
+.footer__manue,
+.footer__overview,
+.footer__links {
+  width: calc(100% / 5);
   padding: 3%;
-}
-.footer__logo-div h4 {
-  font-size: 1rem;
-}
-.footer__logo-div p {
-  font-size: 0.8rem;
-  color: var(--gray);
-}
-.footer__manue h5 {
-  font-size: 1rem;
-}
-.footer__manue p {
-  font-size: 0.8rem;
-  color: var(--gray);
 }
